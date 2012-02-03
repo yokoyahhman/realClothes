@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* reset----------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre,
+a, em, font, img, strong, sub, sup, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	background: transparent;
+}
+ol, ul {
+	list-style: none;
+}
+label {
+	cursor: pointer;
+}
+img {
+	vertical-align: bottom;
+	display: block;
+}
+/*index*/
+#indexWrapper{
+	background: url("../images/bg_index.png") repeat-x 0 0;
+}
+#indexWrapperInner{
+	width: 900px;
+	margin: 0 auto;
+}
+#indexWrapperInner h1{
+	margin: 0 auto;
+	padding: 179px 0 30px 20px;
+	width: 723px;
+	
+}
+#indexWrapperInner p {
+	margin: 0 auto;
+	width: 145px;
+	height: 110px;
+}
+#indexWrapperInner p a{
+	width: 145px;
+	height: 110px;
+	text-indent: -9999px; /* テキストを隠す */  
+	text-decoration: none;  
+	display: block;  
+	background: url("../images/btn_index.png") no-repeat;
+}
+#indexWrapperInner p a:active{
+	background: -145px 0 url("../images/btn_index.png") no-repeat;	
+}
+/*---header---*/
+#wrapper{
+	background: url("../images/bg_header.png") repeat-x 0 0;
+}
+#wrapperInner {
+	width: 900px;
+	margin: 0 auto;
+}
+#header {
+	margin-bottom: 50px;
+}
+#header h1 {
+	text-align: center;
+} 
+/*---contMain---*/
+.contMain {
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+/*---contMainInner---*/
+.contMainInner01 {
+	float: left;
+	width: 470px;
+}
+.contMainInner02 {
+	float: right;
+	width: 380px;
+	margin-right: 50px;
+}
+.contMainInner01 .pickup {
+	margin-left: 80px;
+	width: 300px;
+	padding: 20px;
+	border: 1px solid #eeeeee;
+	-webkit-box-shadow: 0 5px 8px 0 #eeeeee inset; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 5px 8px 0 #eeeeee inset; /* Firefox用 */
+	box-shadow: 0 5px 8px 0 #eeeeee inset; /* CSS3 */
+}
+.contMainInner01 .pickup p {	
+	border:1px solid #eeeeee; 
+}
+/*contMainInner02*/
+.productData {
+	border: 1px solid #eeeeee; 
+	margin-bottom: 40px;
+}
+.dataBox {
+	height:240px;
+	overflow-x: hidden;
+	position: relative;
+}
+.dataBox p {
+	-webkit-box-shadow: 0 5px 8px 0 #eeeeee inset; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 5px 8px 0 #eeeeee inset; /* Firefox用 */
+	box-shadow: 0 5px 8px 0 #eeeeee inset; /* CSS3 */
+	min-height: 200px;
+    width: 338px;
+	padding: 20px;
+	font-size: 80%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.dataWrap {
+	width: 180px;
+	float: right;
+}
+.clothData,
+.yourData {
+	height: 39px;
+	font-size: 70%;
+	color: #666666;
+	padding-left: 40px;
+	line-height:140%;
+}
+.yourData {
+	background: url("../images/bg_yourdata.png") no-repeat 0 0;
+	margin-bottom: 10px;
+}
+.clothData {
+	background: url("../images/bg_clothdata.png") no-repeat 0 0;
+}
+.dataWrap span{
+	font-weight: bold;
+	color:#000000;	
+	font-size:120%;
+}
+/*contBottom*/
+.contBottom {
+	margin-bottom: 30px;
+}
+.contBottom p,
+.contBottom ul,
+.contBottom li {
+	float: left;
+}
+.contBottom p {
+	padding-top: 70px;
+	width: 34px;
+	height: 45px;
+	float: left;
+}
+.contBottom p.left a {
+	width: 34px;
+	height: 45px;
+	text-indent: -9999px; /* テキストを隠す */  
+	text-decoration: none;  
+	display: block;  
+	background: url("../images/btn_bottom_left.png") no-repeat;
+}
+.contBottom p.left a:active {
+	background: -34px 0 url("../images/btn_bottom_left.png") no-repeat;	
+}
+.contBottom p.right a {
+	width: 34px;
+	height: 45px;
+	text-indent: -9999px; /* テキストを隠す */  
+	text-decoration: none;  
+	display: block;  
+	background: url("../images/btn_bottom_right.png") no-repeat;
+}
+.contBottom p.right a:active {
+	background: -34px 0 url("../images/btn_bottom_right.png") no-repeat;	
+}
+.contBottom p.left {
+	margin-right: 16px;
+	
+}
+.contBottom p.right {
+	margin-left: 16px;
+}
+.contBottom .slider {
+	width: 800px;
+	height: 178px;
+	overflow: hidden;
+	float: left;
+	position:relative;
+}
+.contBottom .slider ul {
+	width: 3000px;
+	float:left;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.contBottom .slider ul li {
+	padding: 10px;
+	border: 1px solid #eeeeee;
+	margin-right: 10px;
+	-webkit-box-shadow: 0 5px 8px 0 #eeeeee inset; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 5px 8px 0 #eeeeee inset; /* Firefox用 */
+	box-shadow: 0 5px 8px 0 #eeeeee inset; /* CSS3 */
+}
+.contBottom .slider ul li a {
+	display: block;
+	border: 1px solid #eeeeee;
+}
+.contBottom .slider ul li a:hover {
+	display: block;
+	border: 1px solid #000000;
+}
+/*footer*/
+#footer {
+	background: #222222;
+	padding: 50px;
+	-webkit-box-shadow: 0 10px 10px 0 #000000 inset; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 10px 10px 0 #000000 inset; /* Firefox用 */
+	box-shadow: 0 10px 10px 0 #000000 inset; /* CSS3 */
+}
+#footer p {
+	width: 80px;
+	height: 63px;
+	margin: 0 auto;  
+
+}
+#footer p a {
+	width: 80px;
+	height: 63px;
+	text-indent: -9999px; /* テキストを隠す */  
+	text-decoration: none;  
+	display: block;  
+	background: url("../images/btn_camm.png") no-repeat;
+}
+#footer p a:active{
+	background:-80px 0 url("../images/btn_camm.png") no-repeat;	
+}
+
+/*clearfix*/
+.contBottom .slider:after,
+.contBottom .slider ul:after,
+.contBottom:after,
+.contMain:after,
+.contMainInner02:after,
+.contMainInner01:after {
+	 content: ".";
+	 display: block;
+	 height: 0;
+	 visibility: hidden;  
+	 clear: both;
+}
+.contBottom .slider:after
+.contBottom .slide rul,
+.contBottom,
+.contMain,
+.contMainInner02,
+.contMainInner01 {
+	 zoom: 1;
+}

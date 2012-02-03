@@ -1,0 +1,48 @@
+#{data}
+
+div#wrapper
+  div#wrapperInner
+    div#header
+      h1
+        img(height="158",width="900",alt="[REAL CLOTHES DAYS]KINECT PROJECT",src="/images/logo.png")
+    div.contMain
+      div.contMainInner01
+        div.pickup
+          p#bigscreen
+            a(href="javascript:void(0);")
+              - if (!list[0])
+                img.pickupImg(height="358",width="298",alt="申し訳ありません。データを見つける事が出来ませんでした。",src="/images/img_nodata.png")
+              - else
+                img.pickupImg(height="358",width="298",alt="#{list[0].data}",src="#{list[0].name}")
+      div.contMainInner02
+        div.productData
+          p.productDataTitle
+            img(height="26",width="380",alt="productdata",src="/images/txt_productdata.png")
+          div.dataBox
+            - if (!list[0])
+              p#info 下部のアイコンで再計測してくだちい
+            - else
+              p#info=list[0].data
+        div.dataWrap
+            p.yourData Your shoulder width is <br />
+                span 42cm
+            p.clothData The number of clothes is <br />
+                span #{num}
+    div.contBottom
+      p.left
+        a#left(href="javascript:void(0);") prev
+      div.slider#listbox
+        ul#list
+          - if (list[0])
+            -each photos in list
+              li.list
+                a(href="javascript:void(0);")
+                  img.thumbImg(height="154",width="128",alt="#{photos.data}",src="#{photos.name}")
+          - else
+            li
+              img.thumbImg(height="154",width="776",alt="",src="/images/txt_nodata.png")
+      p.right
+        a#right(href="javascript:void(0);") next
+  div#footer
+    p
+      a(href="javascript:void(0);") cam
